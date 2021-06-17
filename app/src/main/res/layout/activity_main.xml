@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -13,7 +12,7 @@
         android:id="@+id/txt_resultado"
         android:layout_width="match_parent"
         android:layout_height="95dp"
-        android:layout_margin="3dp"
+        android:layout_margin="@dimen/margin_simple"
         android:background="@color/white"
         android:text="@string/app_name">
 
@@ -24,7 +23,6 @@
         android:id="@+id/tela"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="3dp"
         android:background="@color/white"
         android:orientation="vertical"
 
@@ -41,41 +39,35 @@
 
             <Button
                 android:id="@+id/btn_dividir"
-                style="@style/Theme.CalcVenturus"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
-
-                android:background="@color/grey_300"
+                android:layout_margin="@dimen/margin_simple"
+                android:textColor="@color/black"
                 android:text="@string/div" />
 
             <Button
                 android:id="@+id/btn_multiplicar"
+                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
-
-                android:background="@color/grey_300"
+                android:layout_margin="@dimen/margin_simple"
                 android:text="@string/mut" />
 
             <Button
                 android:id="@+id/btn_sub"
+                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
-
-                android:background="@color/grey_300"
+                android:layout_margin="@dimen/margin_simple"
                 android:text="@string/sub" />
 
             <Button
                 android:id="@+id/btn_soma"
-                style="@style/Widget.AppCompat.Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
-
-                android:background="@color/grey_300"
-                android:text="@string/soma" />
+                android:layout_margin="@dimen/margin_simple"
+                android:text="@string/soma"
+                android:textColor="@color/black" />
             <!-- parte 1   !-->
         </LinearLayout>
 
@@ -91,32 +83,32 @@
                 android:id="@+id/btn_7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:background="@color/grey_300"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/margin_simple"
                 android:text="@string/nb_7" />
 
             <Button
                 android:id="@+id/btn_8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:background="@color/grey_300"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/margin_simple"
                 android:text="@string/nb_8" />
 
             <Button
                 android:id="@+id/btn_9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:background="@color/grey_300"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/margin_simple"
                 android:text="@string/nb_9" />
 
             <Button
                 android:id="@+id/btn_ponto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:background="@color/grey_300"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/margin_simple"
                 android:text="@string/ponto" />
             <!-- parte 2   !-->
         </LinearLayout>
@@ -125,11 +117,10 @@
             android:id="@+id/horizontal4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:layout_weight="2"
             android:background="@color/white"
             android:orientation="horizontal"
-            android:baselineAligned="false">
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -155,27 +146,27 @@
                             android:id="@+id/btn_4"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="5dp"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/margin_simple"
                             android:layout_weight="1"
-                            android:background="@color/grey_300"
                             android:text="@string/nb_4" />
 
                         <Button
                             android:id="@+id/btn_5"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="5dp"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/margin_simple"
                             android:layout_weight="1"
-                            android:background="@color/grey_300"
                             android:text="@string/nb_5" />
 
                         <Button
                             android:id="@+id/btn_6"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="5dp"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/margin_simple"
                             android:layout_weight="1"
-                            android:background="@color/grey_300"
                             android:text="@string/nb_6" />
 
 
@@ -193,28 +184,28 @@
                             android:id="@+id/btn_1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="5dp"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/margin_simple"
                             android:layout_weight="1"
 
-                            android:background="@color/grey_300"
                             android:text="@string/nb_1" />
 
                         <Button
                             android:id="@+id/btn_2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="5dp"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/margin_simple"
                             android:layout_weight="1"
-                            android:background="@color/grey_300"
                             android:text="@string/nb_2" />
 
                         <Button
                             android:id="@+id/btn_3"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="5sp"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/margin_simple"
                             android:layout_weight="1"
-                            android:background="@color/grey_300"
                             android:text="@string/nb_3" />
 
 
@@ -235,9 +226,8 @@
                     android:id="@+id/btnIgual"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_gravity="end"
-                    android:layout_marginTop="5dp"
-                    android:background="@color/grey_300"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/margin_simple"
                     android:text="@string/igual" />
                 <!-- vertical 2    !-->
             </LinearLayout>
