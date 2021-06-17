@@ -20,7 +20,7 @@
     </TextView>
 
     <LinearLayout
-        android:id="@+id/tela"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
@@ -118,9 +118,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
+            android:layout_margin="@dimen/margin_simple"
             android:background="@color/white"
             android:orientation="horizontal"
-            >
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -226,9 +227,9 @@
                     android:id="@+id/btnIgual"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textColor="@color/black"
                     android:layout_margin="@dimen/margin_simple"
-                    android:text="@string/igual" />
+                    android:text="@string/igual"
+                    android:textColor="@color/black" />
                 <!-- vertical 2    !-->
             </LinearLayout>
             <!-- parte 3   !-->
